@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     //선언
     ImageButton image_pen;
     ImageButton image_user;
+    ImageButton image_plus;
 
     //액티비티 끌고옴
     private FragmentPagerAdapter fragmentPagerAdapter;
@@ -55,6 +56,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, WriteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //여정 추가(플러스)창 띄우기
+        image_plus = findViewById(R.id.image_plus);
+        image_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(intent);
             }
         });
