@@ -1,6 +1,7 @@
 package com.example.newtravel2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MakeTravelActivity extends AppCompatActivity {
+public class MakeTravelActivity extends FragmentActivity {
 
     ListView listView1;
     ArrayAdapter<String> adapter;
@@ -59,5 +60,4 @@ public class MakeTravelActivity extends AppCompatActivity {
             }
         });
     }
-
 }
